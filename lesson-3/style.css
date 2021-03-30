@@ -1,0 +1,61 @@
+html, body {
+    height: 100%;
+} 
+
+
+.field {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.sky {
+    background: aqua;
+    flex-grow: 1;
+}
+.sky-cloud {
+    background: white;
+    position: absolute;
+    width: 100px;
+    height: 30px;
+}
+.sky-cloud_spindrift {
+    width: 100px;
+    height: 30px;
+    outline: 10px dashed white;
+}
+.sky-cloud_1 {
+    left: 300px;
+    top: 100px;
+}
+.sky-cloud_2 {
+    left: 400px;
+    top: 270px;
+    transform: rotate(30deg);
+}
+
+.sky-sun {
+    background: yellow;
+    position: absolute;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    left: 50%;
+    top: 10%;
+}
+
+.ground {
+    position: relative;
+    flex-grow: 1;
+}
+.ground-grass {
+    background: green;
+    height: 100%;
+}
+.ground-mountains {
+    height: 50px;
+    width: 200px;
+    right: 20px;
+    top: -20px;
+    position: absolute;
+    background: black;
+}
