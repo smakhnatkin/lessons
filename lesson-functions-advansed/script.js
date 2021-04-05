@@ -1,3 +1,10 @@
+// bind
+
+// const bind = (fn, context, ...bindArgs) => (...args) => fn.apply(context, ...bindArgs, ...args);
+
+
+
+
 // console.log('Снова функции');
 
 // оператор ...
