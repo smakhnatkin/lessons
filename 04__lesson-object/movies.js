@@ -28,22 +28,7 @@ const state = [{
     sessionNumber: 13
 }];
 
-// фильтрация по сезону
-// поиск по названию
-// удаление эпизода
-// добавление эпизода
 
-filter(state, 'sessionNumber', 13)
-search(state, 'title', 'Brian');
-addEpisode(state, {
-    title: 'The Lord',
-    duration: 1320000,
-    description: '',
-    episodeNumber: 4,
-    sessionNumber: 13
-})
-
-deleteEpisode(state, 'title', 'Brian');
 changeEpisode(state, 2, 'Brian');
 
 const changeEpisode = function(state, number, title) {
