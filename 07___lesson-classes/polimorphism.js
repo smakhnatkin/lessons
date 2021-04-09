@@ -1,0 +1,26 @@
+
+class Person {
+    constructor(name) {
+        this.name = name;
+    }
+    me() {
+        return `My name is ${this.name}`;
+    }
+}
+
+const axel = new Person('Axel');
+console.log(axel.me()); // ->  'My name is Axel'
+
+class Employee extends Person {
+    constructor (name, salary) {
+        super(name);
+        this.salary = salary;
+    }
+    me() {
+        return `My name is ${this.name} and my salary is ${this.salary}`;
+    } 
+}
+
+const nick = new Employee('Nick', 3000);
+console.log(nick.me()); // ->  'My name is Nick and my salary is 3000'
+
